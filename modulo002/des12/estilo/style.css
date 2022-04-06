@@ -3,6 +3,10 @@
     margin: 0px;
     padding: 0px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&family=Satisfy&display=swap');
+ :root{
+     --fonte1: 'Roboto', sans-serif;
+ }
 html, body{
     background-color: darkolivegreen;
     min-height: 100vh;
@@ -15,6 +19,7 @@ header{
 h1{
     padding: 5px;
     font-variant: small-caps;
+    font-size: 10vw;
 }
 p{
     padding-bottom: 50px
@@ -32,6 +37,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte1);
+    font-size: 3vw;
 }
 section.imagem > p {
     background-color: rgb(104, 109, 114);
@@ -46,6 +53,8 @@ section.imagem > p {
 .imagem{
     background-color: rgb(131, 126, 121);
     color: white;
+    display: inline-block;
+    padding: 5px;
 }
 footer{
     background-color: black;
