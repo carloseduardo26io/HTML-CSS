@@ -3,13 +3,11 @@
     margin: 0px;
     padding: 0px;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&family=Satisfy&display=swap');
- :root{
-     --fonte1: 'Roboto', sans-serif;
- }
+
+ 
 html, body{
     background-color: darkolivegreen;
-    min-height: 100vh;
+    min-height: 100vw;
 }
 header{
     background-color: black;
@@ -37,12 +35,16 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-family: var(--fonte1);
-    font-size: 3vw;
+    font-size: 2.5vw;
+}
+section p {
+    padding-bottom: 2em;
 }
 section.imagem > p {
-    background-color: rgb(104, 109, 114);
+    background-color: rgba(59, 67, 78, 0.638);
     width: 400px;
+    text-shadow: 1px 1px 0px black;
+    display: inline-block;
 }
 .normal{
     background-color: white;
@@ -51,10 +53,24 @@ section.imagem > p {
 
 }
 .imagem{
-    background-color: rgb(131, 126, 121);
+    background-color: rgba(152, 148, 144, 0.178);
     color: white;
     display: inline-block;
-    padding: 5px;
+    padding: 10px;
+    box-shadow:inset 6px 6px 13px rgba(0, 0, 0, 0.374);
+    width: 100vw;
+    background-attachment: fixed;
+   
+}
+ section#img01{
+background-image: url("/modulo002/des12/imagens/background001.jpg");
+background-position: right center;
+background-size: cover;
+}
+#img02{
+background-image: url("/modulo002/des12/imagens/background002.jpg");
+background-size: cover;
+background-position: right center;
 }
 footer{
     background-color: black;
