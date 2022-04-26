@@ -14,6 +14,12 @@
             border-collapse: collapse;
 
         }
+        caption{
+            font-size: 1.6em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: darkgray;
+        }
         td, th{
            border: 1px solid black; 
            padding:10px ;
@@ -22,6 +28,9 @@
             background-color:grey;
             color: white;
         }
+        td.num{
+            text-align: right;
+        }
     </style>
 </head>
 <body>
@@ -29,6 +38,7 @@
     <!--
         Anatomia para tabelas grandes 
         table
+        capiton
          thead
          tr, td, th
           tbody
@@ -37,6 +47,9 @@
            tr, td, th 
     -->
 <table>
+    <caption>
+        População das Unidades Federativas
+    </caption>
 <thead>
           <tr>
       <th>Estado</th>
@@ -47,22 +60,22 @@
 <tbody>
            <tr>
     <td>São Paulo</td>
-    <td> 45 919 049 </td>
+    <td class="num"> 45 919 049 </td>
            </tr>
            <tr>
     <td>Minas Gerais</td>
-    <td>17 264 943</td>
+    <td class="num">17 264 943</td>
            </tr>
            <tr>
     <td>Rio de Janeiro</td>
-    <td>17 264 943 </td>
+    <td class="num">17 264 943 </td>
            </tr>
 </tbody>
 
 <tfoot>
 <tr>
 <th>Total de Habitantes</th>
-<td>0000</td>
+<td><strong>0000</strong></td>
 </tr>
 </tfoot>
 </table>
